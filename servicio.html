@@ -8,6 +8,19 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 
     <title>Historial clínico</title>
+
+    <style>
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            /* Set the fixed height of the footer here */
+            line-height: 60px;
+            /* Vertically center the text there */
+            background-color: white;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,8 +28,7 @@
     <nav class="navbar navbar-expand-lg navbar-light sticky-top border-bottom shadow-sm" style="background: white;">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="img/logocliniccloud.png" class="d-block" style=" width: 120px;"
-                    alt="...">
+                <img src="img/logocliniccloud.png" class="d-block" style=" width: 120px;" alt="...">
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -46,35 +58,61 @@
 
 
     <!-- ---------------------------------------------- Contenido ------------------------------------------ -->
-    <br><br><br><br><br>
-    <div class="container">
-        <div class="row">
-            <div class="col-6 justify-content-center align-items-center">
+    <br><br><br>
 
-                <h1>¿Qué ofrece este servicio?</h1>
-                <br><br>
-
-
-                Este servicio electrónico tiene por objetivo el proporcionar a los ciudadanos información personalizada
-                de salud, ayudarles a conocer la evolución de sus problemas de salud para un mejor autocuidado,
-                facilitar la gestión de citas solicitadas.
-
-                Podrá consultar un conjunto de sus informes clínicos electrónicos que están disponibles en el Sistema
-                y tener la garantía de que, cuando se desplace fuera de la su ciudad y
-                requiera asistencia medina, estos informes estén disponibles para los profesionales que le
-                atiendan en cualquier centro de salud.
-
+    <div class="container border-bottom shadow-sm" style="padding: 30px; background: white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 justify-content-center align-items-center">
+                    <h1>¿Qué ofrece este servicio?</h1>
+                    <br><br><br>
+                </div>
             </div>
+        </div>
+
+        <div class="container marketing">
+            <!-- Two columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="rounded-circle" src="img/service/01.jpg" alt="Generic placeholder image" width="140"
+                        height="140">
+
+                    <br><br>
+
+                    <p> Este servicio electrónico tiene por objetivo el proporcionar a los ciudadanos información
+                        personalizada
+                        de salud, ayudarles a conocer la evolución de sus problemas de salud para un mejor autocuidado,
+                        facilitar la gestión de citas solicitadas.</p>
+
+                </div><!-- /.col-lg-8 -->
+                <div class="col-lg-6">
+                    <img class="rounded-circle" src="img/service/02.jpg" alt="Generic placeholder image" width="140"
+                        height="140">
+
+                    <br><br>
+                    <p>Podrá consultar un conjunto de sus informes clínicos electrónicos que están disponibles en el
+                        Sistema
+                        y tener la garantía de que, cuando se desplace fuera de la su ciudad y
+                        requiera asistencia medina, estos informes estén disponibles para los profesionales que le
+                        atiendan en cualquier centro de salud.</p>
+
+                </div><!-- /.col-lg-8 -->
+
+            </div><!-- /.row -->
+
         </div>
     </div>
 
-    <!--Footer-->
-
-    <footer class="footer">
-        <div class="container">
+    <footer class="footer" style="-webkit-box-shadow: 0px 1px 22px -11px rgba(0,0,0,0.85);
+    -moz-box-shadow: 0px 1px 22px -11px rgba(0,0,0,0.85);
+    box-shadow: 0px 1px 22px -11px rgba(0,0,0,0.85);">
+        <div class="container ">
             <span class="text-muted"> Hospital Inc. </span>
         </div>
     </footer>
+    <!--Footer-->
+
+
 
     <!-------------------------------------------------- Scripts ------------------------------------------------->
     <script src="js/jquery-3.3.1.slim.min.js"></script>
@@ -83,6 +121,8 @@
 
 
 
+
 </body>
+
 
 </html>
