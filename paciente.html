@@ -8,39 +8,59 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 
     <title>Historial clínico</title>
+
+    <style>
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            /* Set the fixed height of the footer here */
+            line-height: 60px;
+            /* Vertically center the text there */
+            background-color: white;
+        }
+    </style>
+
 </head>
 
 <body>
     <!-- --------------------------------------- Navbar ----------------------------------------------- -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top border-bottom shadow-sm" style="background: white;">
         <div class="container">
-            <a class="navbar-brand" href="#">Logo mamalon</a>
+            <a class="navbar-brand" href="#">
+                <img src="img/logocliniccloud.png" class="d-block" style=" width: 120px;" alt="...">
+            </a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto" style="font-size: large">
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">Inicio</a>
+                        <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="servicio.html">¿Qué ofrece este servicio?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="acceder.html">Preguntas frecuentes</a>
+                        <a class="nav-link" href="acceder.html">¿Cómo acceder?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Salir</a>
+                        <a class="nav-link" href="preguntas.html">Preguntas frecuentes</a>
                     </li>
+
                 </ul>
             </div>
         </div>
     </nav>
 
+
     <!-- ---------------------------------------------- Contenido ------------------------------------------ -->
     <br><br>
+
     <div class="accordion" id="accordionExample">
         <div class="card">
             <div class="card-header" id="headingOne">
@@ -83,44 +103,7 @@
             </div>
 
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body mr-4 ml-4">
-                    <div class="form-inline">
-                        <label class="col-form-label mr-3">Apellido paterno:</label>
-                        <input type="text" value="Algo" class="mr-sm-2 form-control">
-                        <label class="col-form-label mr-3">Apellido materno:</label>
-                        <input type="text" value="Algo" class="mb-2 mr-sm-2 form-control">
-                        <label class="col-form-label mr-3">Nombres:</label>
-                        <input type="text" value="Algo" class="mb-2 mr-2 form-control">
-                        <label for="estadoCivil" class="mr-3">Estado cívil</label>
-                        <select id="estadoCivil" class="form-control">
-                            <option>Casado</option>
-                            <option>Soltero</option>
-                            <option>Divorciado</option>
-                            <option>Viudo</option>
-                        </select>
-                    </div>
-                    <br>
-                    <div class="form-inline">
-                        <label class="col-form-label mr-3">Historial clínico</label>
-                        <input type="text" value="Algo" class="mr-sm-2 form-control">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                value="option1">
-                            <label class="form-check-label" for="inlineRadio1">Hombre</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                value="option2">
-                            <label class="form-check-label" for="inlineRadio2">Mujer</label>
-                        </div>
-                        <label for="example-date-input" class="col-form-label mr-3">Date</label>
-                        <input class="form-control mr-2" type="date" value="2000-01-01" id="example-date-input">
-                        <label class="col-form-label mr-3">Edad: </label>
-                        <input class="form-control mr-2" type="number" value="0" id="example-number-input">
-                        <label class="col-form-label mr-3">Grupo sanguineo</label>
-                        <input type="text" value="Algo" class="mr-sm-2 form-control">
-                    </div>
-                </div>
+
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                 <div class="card-body">
@@ -206,6 +189,139 @@
 
         </div>
     </div>
+
+
+    <div class="row w-100">
+        <div class=" col-3 border-bottom shadow-sm" style="padding: 30px;">
+            <div class="">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                        aria-controls="v-pills-home" aria-selected="true">Datos</a>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                        aria-controls="v-pills-profile" aria-selected="false">Antecedentes Personales </a>
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                        aria-controls="v-pills-messages" aria-selected="false">Antecedentes Familiares </a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+                        aria-controls="v-pills-settings" aria-selected="false">Alergias</a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+                        aria-controls="v-pills-settings" aria-selected="false">Vacunas</a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+                        aria-controls="v-pills-settings" aria-selected="false">Tratamiento Habitual</a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+                        aria-controls="v-pills-settings" aria-selected="false">Intervenciones Quirurgicas</a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+                        aria-controls="v-pills-settings" aria-selected="false">Enfermedades Crónicas</a>
+                </div>
+            </div>
+        </div>
+
+        <div class=" col-9 border-bottom shadow-sm" style="padding: 30px;">
+            <div class="">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                        aria-labelledby="v-pills-home-tab">
+
+                        <div class="card-body mr-4 ml-4">
+                            <div class="row">
+                                <div class="form-group col-6">
+                                    <label class="col-form-label mr-3" for="apPaterno"><strong> Apellido Paterno:
+                                        </strong></label>
+                                    <input class="mb-2 mr-sm-2 form-control" type="text" class="form-control"
+                                        id="apPaterno" placeholder="Apellido Paterno">
+                                </div>
+                                <div class="form-group col-6">
+                                    <label class="col-form-label mr-3" for="apMaterno"><strong> Apellido Materno:
+                                        </strong></label>
+                                    <input class="mb-2 mr-sm-2 form-control" type="text" class="form-control"
+                                        id="apMaterno" placeholder="Apellido Materno">
+                                </div>
+                            </div>
+
+                            <div class="form-inline">
+
+                                <label class="col-form-label mr-3">Nombres:</label>
+                                <input type="text" value="Algo" class="mb-2 mr-2 form-control">
+                                <label for="estadoCivil" class="mr-3">Estado cívil</label>
+                                <select id="estadoCivil" class="form-control">
+                                    <option>Casado</option>
+                                    <option>Soltero</option>
+                                    <option>Divorciado</option>
+                                    <option>Viudo</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="form-inline">
+                                <label class="col-form-label mr-3">Historial clínico</label>
+                                <input type="text" value="Algo" class="mr-sm-2 form-control">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Hombre</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Mujer</label>
+                                </div>
+                                <label for="example-date-input" class="col-form-label mr-3">Date</label>
+                                <input class="form-control mr-2" type="date" value="2000-01-01" id="example-date-input">
+                                <label class="col-form-label mr-3">Edad: </label>
+                                <input class="form-control mr-2" type="number" value="0" id="example-number-input">
+                                <label class="col-form-label mr-3">Grupo sanguineo</label>
+                                <input type="text" value="Algo" class="mr-sm-2 form-control">
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                        aria-labelledby="v-pills-profile-tab">
+                        ...</div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                        aria-labelledby="v-pills-messages-tab">
+                        ...</div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                        aria-labelledby="v-pills-settings-tab">
+                        ...</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Footer-->
+    <footer class="footer" style="-webkit-box-shadow: 0px 1px 22px -14px rgba(0,0,0,0.85);
+    -moz-box-shadow: 0px 1px 22px -14px rgba(0,0,0,0.85);
+    box-shadow: 0px 1px 22px -14px rgba(0,0,0,0.85);">
+
+        <div class="container ">
+            <table>
+                <tr>
+                    <td width="30px">
+                        <img src="img/iconosalud.png" class="d-block" style=" width: 20px;" alt="...">
+                    </td>
+                    <td>
+                        <span class="text-muted"> Hospital Inc. </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
     <!-------------------------------------------------- Scripts ------------------------------------------------->
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
