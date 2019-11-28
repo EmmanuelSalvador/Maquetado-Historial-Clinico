@@ -11,7 +11,7 @@
 
     <style>
         .footer {
-            position: absolute;
+
             bottom: 0;
             width: 100%;
             height: 60px;
@@ -19,6 +19,12 @@
             line-height: 60px;
             /* Vertically center the text there */
             background-color: white;
+
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+
         }
 
         .nav-pills .nav-link.active,
@@ -68,34 +74,46 @@
 
     <div class="row w-100">
         <div class="col-3 border-bottom shadow-sm" style="padding: 30px;">
-            
-                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
-                        aria-controls="v-pills-home" aria-selected="true">Datos</a>
-                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
-                        aria-controls="v-pills-profile" aria-selected="false">Antecedentes Personales </a>
-                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
-                        aria-controls="v-pills-messages" aria-selected="false">Antecedentes Familiares </a>
-                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
-                        aria-controls="v-pills-settings" aria-selected="false">Alergias</a>
-                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
-                        aria-controls="v-pills-settings" aria-selected="false">Vacunas</a>
-                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
-                        aria-controls="v-pills-settings" aria-selected="false">Tratamiento Habitual</a>
-                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
-                        aria-controls="v-pills-settings" aria-selected="false">Intervenciones Quirurgicas</a>
-                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
-                        aria-controls="v-pills-settings" aria-selected="false">Enfermedades Crónicas</a>
-                </div>
-            
+
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-datos-tab" data-toggle="pill" href="#v-pills-datos" role="tab"
+                    aria-controls="v-pills-datos" aria-selected="true">Datos</a>
+                <a class="nav-link" id="v-pills-antecedentespersonales-tab" data-toggle="pill"
+                    href="#v-pills-antecedentespersonales" role="tab" aria-controls="v-pills-profile"
+                    aria-selected="false">Antecedentes Personales </a>
+                <a class="nav-link" id="v-pills-antecedentesfamiliares-tab" data-toggle="pill"
+                    href="#v-pills-antecedentesfamiliares" role="tab" aria-controls="v-pills-antecedentesfamiliares"
+                    aria-selected="false">Antecedentes Familiares </a>
+                <a class="nav-link" id="v-pills-alergias-tab" data-toggle="pill" href="#v-pills-alergias" role="tab"
+                    aria-controls="v-pills-alergias" aria-selected="false">Alergias</a>
+
+                <a class="nav-link" id="v-pills-vacunas-tab" data-toggle="pill" href="#v-pills-vacunas" role="tab"
+                    aria-controls="v-pills-vacunas" aria-selected="false">Vacunas</a>
+
+                <a class="nav-link" id="v-pills-tratamientohabitual-tab" data-toggle="pill"
+                    href="#v-pills-tratamientohabitual" role="tab" aria-controls="v-pills-tratamientohabitual"
+                    aria-selected="false">Tratamiento Habitual</a>
+
+                <a class="nav-link" id="v-pills-interquirurgicas-tab" data-toggle="pill"
+                    href="#v-pills-interquirurgicas" role="tab" aria-controls="v-pills-interquirurgicas"
+                    aria-selected="false">Intervenciones Quirurgicas</a>
+
+                <a class="nav-link" id="v-pills-enfecronicas-tab" data-toggle="pill" href="#v-pills-enfecronicas"
+                    role="tab" aria-controls="v-pills-enfecronicas" aria-selected="false">Enfermedades Crónicas</a>
+            </div>
+
         </div>
 
         <div class=" col-9 border-bottom shadow-sm" style="padding: 30px;">
+
             <div class="">
                 <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                        aria-labelledby="v-pills-home-tab">
 
+                    <div class="tab-pane fade show active" id="v-pills-datos" role="tabpanel"
+                        aria-labelledby="v-pills-datos-tab">
+                        <p>
+                            <h2> Información Básica </h2>
+                        </p>
                         <div class="card-body mr-4 ml-4">
                             <div class="row">
                                 <div class="form-group col-6">
@@ -113,68 +131,344 @@
                             </div>
 
                             <div class="row">
-                                <div class="form-group col-12">
-                                        <label class="col-form-label mr-3" for="nombre"><strong> Nombre(s):
-                                            </strong></label>
-                                        <input class="mb-2 mr-sm-2 form-control" type="text" class="form-control"
-                                            id="nombre" placeholder="Nombre(s)">
+                                <div class="form-group col-6">
+                                    <label class="col-form-label mr-3" for="nombre"><strong> Nombre(s):
+                                        </strong></label>
+                                    <input class="mb-2 mr-sm-2 form-control" type="text" class="form-control"
+                                        id="nombre" placeholder="Nombre(s)">
+                                </div>
+                                <div class="form-group col-6">
+                                    <label class="col-form-label mr-3" for="numTel"><strong> Número Teléfonico:
+                                        </strong></label>
+                                    <input class="mb-2 mr-sm-2 form-control" type="number" class="form-control"
+                                        id="numTel" placeholder="Número Teléfonico">
                                 </div>
                             </div>
 
-                            <div class="form-inline">
+                            <div class="row">
+                                <div class="form-group col-3">
+                                    <label for="fechNac" class="col-form-label mr-3"><strong> Fecha de Nacimiento
+                                        </strong></label>
+                                    <input class="mb-2 mr-sm-2 form-control" type="date" value="2000-01-01"
+                                        id="fechNac">
+                                </div>
 
-                                <label class="col-form-label mr-3">Nombres:</label>
-                                <input type="text" value="Algo" class="mb-2 mr-2 form-control">
-                                <label for="estadoCivil" class="mr-3">Estado cívil</label>
-                                <select id="estadoCivil" class="form-control">
-                                    <option>Casado</option>
-                                    <option>Soltero</option>
-                                    <option>Divorciado</option>
-                                    <option>Viudo</option>
-                                </select>
+                                <div class="form-group col-3">
+                                    <label for="genero" class="col-form-label mr-3"><strong> Género
+                                        </strong></label>
+                                    <select id="genero" class="mb-2 mr-sm-2 form-control">
+                                        <option>Masculino</option>
+                                        <option>Femenino</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-3">
+                                    <label for="estadoCivil" class="col-form-label mr-3"><strong> Estado Cívil
+                                        </strong></label>
+                                    <select id="estadoCivil" class="form-control">
+                                        <option>Casado</option>
+                                        <option>Soltero</option>
+                                        <option>Divorciado</option>
+                                        <option>Viudo</option>
+                                    </select>
+
+                                </div>
+
+                                <div class="form-group col-3">
+                                    <label for="grupoSanguineo" class="col-form-label mr-3"><strong> Grupo Sanguineo
+                                        </strong></label>
+                                    <select id="grupoSanguineo" class="form-control">
+                                        <option> O- </option>
+                                        <option> O+ </option>
+                                        <option> A- </option>
+                                        <option> A+ </option>
+                                        <option> B- </option>
+                                        <option> B+ </option>
+                                        <option> AB- </option>
+                                        <option> AB+ </option>
+                                    </select>
+                                </div>
                             </div>
-                            <br>
-                            <div class="form-inline">
-                                <label class="col-form-label mr-3">Historial clínico</label>
-                                <input type="text" value="Algo" class="mr-sm-2 form-control">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio1" value="option1">
-                                    <label class="form-check-label" for="inlineRadio1">Hombre</label>
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2>Domicilio</h2>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio2" value="option2">
-                                    <label class="form-check-label" for="inlineRadio2">Mujer</label>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-8">
+                                    <label class="col-form-label mr-3" for="calle"><strong> Calle:
+                                        </strong></label>
+                                    <input class="mb-2 mr-sm-2 form-control" type="text" class="form-control" id="calle"
+                                        placeholder="Calle">
                                 </div>
-                                <label for="example-date-input" class="col-form-label mr-3">Date</label>
-                                <input class="form-control mr-2" type="date" value="2000-01-01" id="example-date-input">
-                                <label class="col-form-label mr-3">Edad: </label>
-                                <input class="form-control mr-2" type="number" value="0" id="example-number-input">
-                                <label class="col-form-label mr-3">Grupo sanguineo</label>
-                                <input type="text" value="Algo" class="mr-sm-2 form-control">
+                                <div class="form-group col-2">
+                                    <label class="col-form-label mr-3" for="NumExt"><strong> No. Exterior
+                                        </strong></label>
+                                    <input class="mb-2 mr-sm-2 form-control" type="number" class="form-control"
+                                        id="numExt" placeholder="No. Exterior">
+                                </div>
+                                <div class="form-group col-2">
+                                    <label class="col-form-label mr-3" for="numInt"><strong> No. Interior:
+                                        </strong></label>
+                                    <input class="mb-2 mr-sm-2 form-control" type="number" class="form-control"
+                                        id="numInt" placeholder="No. Interior">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-4">
+                                    <label class="col-form-label mr-3" for="colonia"><strong> Colonia:
+                                        </strong></label>
+                                    <input class="mb-2 mr-sm-2 form-control" type="text" class="form-control"
+                                        id="colonia" placeholder="Colona">
+                                </div>
+                                <div class="form-group col-4">
+                                    <label class="col-form-label mr-3" for="municipio"><strong> Municipio:
+                                        </strong></label>
+                                    <input class="mb-2 mr-sm-2 form-control" type="text" class="form-control"
+                                        id="municipio" placeholder="Municipio">
+                                </div>
+                                <div class="form-group col-4">
+                                    <label class="col-form-label mr-3" for="estado"><strong> Estado/Entidad Federativa:
+                                        </strong></label>
+                                    <input class="mb-2 mr-sm-2 form-control" type="number" class="form-control"
+                                        id="estado" placeholder="Estado">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-4">
+                                    <label class="col-form-label mr-3" for="cp"><strong> Código Postal:
+                                        </strong></label>
+                                    <input class="mb-2 mr-sm-2 form-control" type="text" class="form-control" id="cp"
+                                        placeholder="CP">
+                                </div>
+                                <div class="form-group col-8">
+                                    <label class="col-form-label mr-3" for="referencia"><strong> Referecias:
+                                        </strong></label>
+                                    <input class="mb-2 mr-sm-2 form-control" type="text" class="form-control"
+                                        id="referencia" placeholder="Referencias">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 text-right">
+                                    <a href="paciente.html">
+                                        <button type="button" class="btn"
+                                            style="background: #2993C7; width: 150px; color: white;">
+                                            Guardar Datos </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-antecedentespersonales" role="tabpanel"
+                        aria-labelledby="v-pills-antecedentespersonales-tab">
+                        <p>
+                            <h2> Antecedentes Personales </h2>
+                        </p>
+                        <div class="card-body mr-4 ml-4">
+                            <div class="form-group col-12">
+                                <label class="col-form-label mr-3" for="antecedentespersonales">Escribe aquí: </label>
+                                <textarea class="mb-2 mr-sm-2 form-control" cols="60" rows="12"
+                                    id="antecedentespersonales"></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 text-right">
+                                    <a href="paciente.html">
+                                        <button type="button" class="btn"
+                                            style="background: #2993C7; width: 150px; color: white;">
+                                            Guardar </button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
 
 
 
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-antecedentesfamiliares" role="tabpanel"
+                        aria-labelledby="v-pills-antecedentesfamiliares-tab">
+
+                        <div>
+                            <p>
+                                <h2> Antecedentes Familiares </h2>
+                            </p>
+                            <div class="card-body mr-4 ml-4">
+                                <div class="form-group col-12">
+                                    <label class="col-form-label mr-3" for="antecedentesfamiliares">Escribe aquí:
+                                    </label>
+                                    <textarea class="mb-2 mr-sm-2 form-control" cols="60" rows="12"
+                                        id="antecedentesfamiliares"></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 text-right">
+                                        <a href="paciente.html">
+                                            <button type="button" class="btn"
+                                                style="background: #2993C7; width: 150px; color: white;">
+                                                Guardar </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                        aria-labelledby="v-pills-profile-tab">
-                        ...</div>
-                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
-                        aria-labelledby="v-pills-messages-tab">
-                        ...</div>
-                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                        aria-labelledby="v-pills-settings-tab">
-                        ...</div>
+
+                    <div class="tab-pane fade" id="v-pills-alergias" role="tabpanel"
+                        aria-labelledby="v-pills-alergias-tab">
+
+                        <div>
+                            <p>
+                                <h2> Alergias </h2>
+                            </p>
+                            <div class="card-body mr-4 ml-4">
+                                <div class="form-group col-12">
+                                    <label class="col-form-label mr-3" for="alergias">Escribe aquí:
+                                    </label>
+                                    <textarea class="mb-2 mr-sm-2 form-control" cols="60" rows="12"
+                                        id="alergias"></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 text-right">
+                                        <a href="paciente.html">
+                                            <button type="button" class="btn"
+                                                style="background: #2993C7; width: 150px; color: white;">
+                                                Guardar </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="tab-pane fade" id="v-pills-vacunas" role="tabpanel"
+                        aria-labelledby="v-pills-vacunas-tab">
+
+                        <div>
+                            <p>
+                                <h2> Vacunas </h2>
+                            </p>
+                            <div class="card-body mr-4 ml-4">
+                                <div class="form-group col-12">
+                                    <label class="col-form-label mr-3" for="vacunas">Escribe aquí:
+                                    </label>
+                                    <textarea class="mb-2 mr-sm-2 form-control" cols="60" rows="12"
+                                        id="vacunas"></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 text-right">
+                                        <a href="paciente.html">
+                                            <button type="button" class="btn"
+                                                style="background: #2993C7; width: 150px; color: white;">
+                                                Guardar </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-tratamientohabitual" role="tabpanel"
+                        aria-labelledby="v-pills-tratamientohabitual-tab">
+
+                        <div>
+                            <p>
+                                <h2> Tratamiento Habitual </h2>
+                            </p>
+                            <div class="card-body mr-4 ml-4">
+                                <div class="form-group col-12">
+                                    <label class="col-form-label mr-3" for="tratamientohabitual">Escribe aquí:
+                                    </label>
+                                    <textarea class="mb-2 mr-sm-2 form-control" cols="60" rows="12"
+                                        id="tratamientohabitual"></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 text-right">
+                                        <a href="paciente.html">
+                                            <button type="button" class="btn"
+                                                style="background: #2993C7; width: 150px; color: white;">
+                                                Guardar </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-interquirurgicas" role="tabpanel"
+                        aria-labelledby="v-pills-interquirurgicas-tab">
+
+                        <div>
+                            <p>
+                                <h2> Intervenciones Quirurgicas </h2>
+                            </p>
+                            <div class="card-body mr-4 ml-4">
+                                <div class="form-group col-12">
+                                    <label class="col-form-label mr-3" for="interquirurgicas">Escribe aquí:
+                                    </label>
+                                    <textarea class="mb-2 mr-sm-2 form-control" cols="60" rows="12"
+                                        id="interquirurgicas"></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 text-right">
+                                        <a href="paciente.html">
+                                            <button type="button" class="btn"
+                                                style="background: #2993C7; width: 150px; color: white;">
+                                                Guardar </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-enfecronicas" role="tabpanel"
+                        aria-labelledby="v-pills-enfecronicas-tab">
+
+                        <div>
+                            <p>
+                                <h2> Enfermedades Crónicas </h2>
+                            </p>
+                            <div class="card-body mr-4 ml-4">
+                                <div class="form-group col-12">
+                                    <label class="col-form-label mr-3" for="enfecronicas">Escribe aquí:
+                                    </label>
+                                    <textarea class="mb-2 mr-sm-2 form-control" cols="60" rows="12"
+                                        id="enfecronicas"></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 text-right">
+                                        <a href="paciente.html">
+                                            <button type="button" class="btn"
+                                                style="background: #2993C7; width: 150px; color: white;">
+                                                Guardar </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
         </div>
 
     </div>
+
+    <br>
+    <br>
+    <br>
 
 
 
