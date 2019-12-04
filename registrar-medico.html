@@ -10,18 +10,7 @@
 
     <title> Historial clínico</title>
 
-    <style>
-        .footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 60px;
-            /* Set the fixed height of the footer here */
-            line-height: 60px;
-            /* Vertically center the text there */
-            background-color: #F7F7F7;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
 </head>
 
@@ -29,10 +18,10 @@
 
 <body>
     <!-- --------------------------------------- Navbar ----------------------------------------------- -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top border-bottom shadow-sm" style="background: white;">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top border-bottom shadow-sm bgnav">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="img/logocliniccloud.png" class="d-block" style=" width: 120px;" alt="...">
+                <img src="img/logocliniccloud.png" class="d-block logo" alt="...">
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -47,7 +36,7 @@
     <!-- ---------------------------------------------- Contenido ------------------------------------------ -->
     <br><br>
 
-    <div class="container border-bottom shadow-sm" style="padding: 30px; background: white;">
+    <div class="container border-bottom shadow-sm divfixed">
 
         <h2>
             Registrar Médico
@@ -65,7 +54,7 @@
                                 placeholder="Número de Cédula Profesional">
                         </div>
                         <div class="col-3">
-                            <button type="button" class="btn" style="background: #2993C7; width: 150px; color: white;">
+                            <button type="button" class="btn" id="buttonBlue">
                                 Verificar </button>
                         </div>
                     </div>
@@ -162,7 +151,7 @@
 
                     <div class="col-12 text-right">
                         <a href="login-medico.html">
-                            <button type="button" class="btn" style="background: #2993C7; width: 150px; color: white;">
+                            <button type="button" class="btn" id="buttonBlue">
                                 Guardar </button>
                         </a>
                     </div>
