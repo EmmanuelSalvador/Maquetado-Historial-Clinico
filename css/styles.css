@@ -1,0 +1,74 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    /* Set the fixed height of the footer here */
+    line-height: 60px;
+    /* Vertically center the text there */
+    background-color: #F7F7F7;
+}
+.footerAcceder {
+
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    /* Set the fixed height of the footer here */
+    line-height: 60px;
+    /* Vertically center the text there */
+    background-color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    -webkit-box-shadow: 0px 1px 22px -14px rgba(0,0,0,0.85);
+    -moz-box-shadow: 0px 1px 22px -14px rgba(0,0,0,0.85);
+    box-shadow: 0px 1px 22px -14px rgba(0,0,0,0.85);
+
+}
+.bgnav {
+    background: white;
+}
+.logo {
+    width: 120px;
+}
+.logofooter {
+    width: 20px;
+}
+#linkblue {
+    color: #2993C7;
+}
+.divfixed {
+    padding: 30px;
+    background: white;
+}
+.divpadd {
+    padding: 30px;
+}
+#buttonBlue {
+    background: #2993C7; width: 150px; color: white;
+}
+nav div div ul {
+    font-size: large 
+}
+.nav-pills .nav-link.active,
+.show>.nav-pills .nav-link {
+    background: #2993C7
+}
+.nav-pills .nav-link,
+.show>.nav-pills .nav-link {
+    color: #2993C7;
+}
+.footerW {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    /* Set the fixed height of the footer here */
+    line-height: 60px;
+    /* Vertically center the text there */
+    background-color: white;
+    -webkit-box-shadow: 0px 1px 22px -14px rgba(0,0,0,0.85);
+    -moz-box-shadow: 0px 1px 22px -14px rgba(0,0,0,0.85);
+    box-shadow: 0px 1px 22px -14px rgba(0,0,0,0.85);
+}
